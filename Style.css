@@ -1,0 +1,491 @@
+/* Use the SG-Example.png located in the /Mockup folder 
+as a guide for what you will be building */
+
+/* 
+====================================
+Sets up styles for sidebar / navigation containers
+====================================
+*/
+/*sets up style for sidebar-container*/
+
+.sidebar-container {
+	background: lightgray;
+	height:100%;
+	position: fixed;
+	padding:10px;
+  width:235px;
+  justify-content: center;
+}
+
+.sidebar-logo {
+ height: 200px;
+ width: 200px;
+ padding: 10px;
+ align-self: center;
+}
+
+nav {
+  top: 0;
+}
+
+nav a {
+  font-family: "consalas", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* padding: 0.5em 0.5em 0.5em 0.5em; */
+  font-size: 75%;
+  text-align: start;
+}
+ nav h2 {
+    /* display: block;
+    position: relative; */
+    text-decoration: none;
+    text-align: center;
+ }
+
+ .section-container {
+    background: #ffffff;
+    margin-top: 0px;
+    margin-left: 290px;
+    padding: 30px 30px;
+    height: 100%;
+ }
+
+ /* .container{
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  /* font-family: */
+} */
+
+ .content-container {
+    background: #1C237D;
+    margin: 0 auto;
+    max-width: 850px;
+ }
+
+ .row {
+   align-content: space-between;
+ }
+
+ .row-container-no-wrap {
+    width: 100%;
+    display: flex;
+    /*sets spacing between elements in container*/
+    justify-content: space-between;
+    flex-wrap: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+
+ .row-container-wrap {
+    width: 75%;
+    display: flex;
+    
+ }
+ /* .center-aligned {
+  display: box;
+  display: flex;
+  box-align: center;
+  align-items: center;
+  box-pack: center;
+  justify-content: center;
+} */
+
+
+
+
+
+/* 
+=========================================================
+HERO IMAGE
+========================================================= 
+*/
+
+
+.center-aligned {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+.height-100vh {
+  height: 100vh;
+  
+  display: flex;            /* establish flex container */
+  flex-direction: column;   /* stack flex items vertically */
+  position: relative;       /* establish neares positioned ancenstor for absolute positioning */
+  
+}
+
+.text {
+  position: absolute;
+  left: 75%;
+  top: 63%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 25pt;
+}
+
+
+
+
+
+
+
+ .text-overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: black;
+    font-size: 600%;
+ }
+a {
+  color: blue;
+  transition: color .25s;
+  text-align: start;
+}
+
+a:hover {
+  color: #F7C746;
+  font-weight:bold;
+}
+
+.center p {
+  text-align: center;
+}
+
+button {
+  align-self: auto;
+}
+
+button:hover {
+  color: blue;
+  font-weight:bold;
+}
+
+/* 
+===========================
+Sets up styles for logos 
+============================
+*/
+.logo-1 {
+  width: 200px;
+  height: 200px;
+  align-content: center;
+}
+.logo-2 {
+  width: 225px;
+  height: 200px;
+}
+
+.logo {
+  align-content: center;
+}
+
+.section-logo {
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+===========================
+Sets up styles for typography 
+============================
+*/
+
+/* Sets up font-face for body copy */ 
+body {
+  font-family: Consolas,monaco,monospace;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  line-height: 1.4em;
+  font-size: xx-large;
+  /* text-align: justify(left); */
+}
+
+/* Sets up font-face for headers */ 
+/* .header {
+  align-content: center;
+  text-align: center;
+} */
+
+h1 {
+  font-family:Consolas,monaco,monospace;  
+  font-size: 54px; 
+  font-style: bold;
+  text-align: center;
+}
+h2{
+  font-family:Consolas,monaco,monospace;  
+  font-size: 36px; 
+  font-style: bold;
+  text-align: center;
+}
+h3{
+  font-family:Consolas,monaco,monospace;  
+  font-size: 28px; 
+  font-style: bold;
+}
+h4{
+  font-family:Consolas,monaco,monospace; 
+  font-size: 24px; 
+  font-style: bold;
+}
+h5{
+  font-family:'Source Sans Pro', sans-serif; 
+  font-size: 24px; 
+  font-style: normal;
+}
+h6 {
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-style: bold;
+  /* color: navy;
+  line-height: 1em; */
+}
+  /* font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Charmonman', cursive; */
+/* Sets up font-weights for headers */ 
+h1 {
+  font-weight: 700;
+  text-align: start;
+}
+
+h2 {
+  font-style: bold;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+.type-styles {
+  margin-top:40px;
+  text-align: left;
+  justify-content: start;
+}
+
+.type-faces {
+  margin-top:40px;
+}
+
+.type-faces-01 {
+  font-family:Consolas,monaco,monospace;
+}
+
+.type-faces-02 {
+  font-family:'Source Sans Pro', sans-serif;
+}
+
+/* 
+==========================
+Sets up styles for colors 
+===========================
+*/
+
+/* Makes a circle shape to serve a color box */ 
+.color-shape {
+  display: block;
+  text-align: center;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin: 0.5em;
+  border: 1px solid white;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.4); 
+}
+
+/* Makes colors */ 
+.color-red {
+  background: #db4444;
+}
+
+/* .color-orange {
+  background: #a3a3a3;
+} */
+
+.color-yellow {
+  background: #f3c344; 
+}
+
+.color-green {
+  background: #146c6c;
+}
+
+.color-blue {
+  background: #142840;
+}
+
+/* .color-purple {
+  background: in;
+} */
+
+.color-black {
+  background: rgb(0, 0, 0); 
+}
+
+.color-gray {
+  background: gray;
+}
+
+/* 
+===========================
+Sets up styles for button 
+============================
+*/
+/* 
+.button button {
+  height: 40px;
+  width: 120px;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600; 
+}
+
+.button-normal {
+  background: gray;
+  color: rgb(255, 255, 255);
+}
+
+.button-hover {
+  background: #f3c344;
+  color: rgb(51, 51, 102);
+}
+
+.button-pressed,
+.button-loading {
+  background:#142840;
+  color:white;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+}
+
+.button-disabled {
+  /* good to go or make a custom disabled state */
+} */
+
+/* 
+===========================
+PSEUDO-CLASSES: VIEW SLIDES 58-63
+============================
+*/
+
+/* .button:hover {
+  color: magenta;
+} */
+
+/* 
+==========================
+Sets up styles for icons 
+===========================
+*/
+
+/* TO ADD FONT AWESOME ICONS GO TO THIS LINK AND COPY THE CSS LINK
+https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
+*/
+
+/* USPS iconography */
+.uscg-icons i {
+  margin-top: 40px;
+  font-size: 30px;
+  color:rgb(51, 51, 102);
+}
+
+.svg-icons img {
+  margin-top: 40px;
+  width: 850px;
+  height: 150px; 
+  display: flex-start;
+  align-content: start;
+}
+
+/* footer iconography */
+.social-icons i {
+  font-size: 44px;
+  color:black; 
+}
+
+.social-icons i:hover {
+  color: #F7C746; 
+}
+
+/* 
+===========================
+Sets up styles for images 
+============================
+*/
+
+#Imagery img {
+  padding: 10px; 
+  height: 475px;
+}
+
+/* 
+====================================
+Sets up styles for articles
+====================================
+*/
+article {
+  margin-top: 40px;
+  margin-bottom: 60px; 
+}
+
+/* Copyright Trilogy Education Services © 2018. All Rights Reserved */
+
+
+
+img{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+
+.container{
+  background-color: none;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card-deck {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  column-count: auto;
+
+}
+
+.card {
+  border-radius: 0;
+  background-color: none;
+  align-content: center;
+}
+
+/* .card-img-top{
+  border-radius: 0px;
+} */
+
+/* .btn{
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  /* background-color: darkgray; */
+  /* border-color: darkgray;
+  color: slategray;
+} */
+/* 
+.btn:hover{
+  background-color: rgb(87, 34, 56);
+  color:white;
+} */
+/* 
+.card-title {
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
+  color: darkgrey
+} */
